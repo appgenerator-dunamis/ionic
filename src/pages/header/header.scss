@@ -1,0 +1,27 @@
+page-header {
+  .navbarContent {
+    .userIcon {
+      height: 24px;
+    }
+    .toolbar-md .toolbar-ios {
+      padding: 0px;
+    }
+    .msgIconTag {
+      color: #203035;
+      height: 20px;
+      margin-right: 12px;
+    }
+    .sosIconTag {
+      height: 20px;
+      color: red;
+    }
+    .userNamePara {
+      font-family: Roboto;
+      color: #203035;
+      .userName {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+  }
+}

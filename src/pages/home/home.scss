@@ -1,0 +1,81 @@
+page-home {
+    ion-header {
+        .userIcon {
+            height: 24px;
+            color: white
+        }
+        .homeHeader {
+            font-size: 35px;
+        }
+        .toolbar-md .toolbar-ios {
+            padding: 0px;
+        }
+        .msgIconTag {
+            color: white;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .sosIconTag {
+            height: 20px;
+            color: red;
+        }
+        .userNamePara {
+            font-family: Roboto;
+            color: #EBEBEB;
+            .userName {
+                font-size: 16px;
+                font-weight: normal;
+            }
+        }
+    }
+    .homepage {
+        .scroll-content {
+            margin-top: 0px !important;
+        }
+        .multipleSlide {
+            padding: 4px 4px 4px 4px;
+        }
+        .swiper-pagination {
+            padding: 3px;
+            .swiper-pagination-bullet {
+                background: #FFF;
+            }
+        }
+        .advertiseMultipleSlider {
+            padding-top: 8px;
+            .tagLineSLider {
+                padding: 0 0 0 10px;
+                color: 203035;
+                font-family: Roboto;
+                font-size: 12px;
+            }
+        }
+        .recentImage {
+            padding-top: 8px;
+            .recentIcon {
+                height: 28px;
+            }
+            .tagLineRecentImages {
+                padding: 0 0 0 10px;
+                color: #203035;
+                font-family: Roboto;
+                font-size: 12px;
+            }
+            .avatarRecentDiv {
+                text-align: center;
+                font-size: 20px;
+            }
+            .contentPara {
+                font-size: 14px;
+                color: #203035;
+            }
+            .time {
+                font-size: 12px;
+            }
+        }
+    }
+}
+ion-title.property-title .toolbar-title{
+    color: #ffffff;
+    font-size: 1rem;
+}

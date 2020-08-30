@@ -1,0 +1,50 @@
+<!-- HEADER -->
+<ion-header no-border>
+  <ion-navbar transparent>
+      <ion-buttons left>
+          <button ion-button icon-only>
+              <ion-avatar item-start>
+                  <img class="userIcon" src="assets/imgs/logo-rvc.png" />
+              </ion-avatar>
+          </button>
+      </ion-buttons>
+      <ion-title class="property-title" (click)="showPropertyList();">{{selectedProperty}}</ion-title>
+      <!-- <div class="userNamePara">
+        <span class="userName">SunSuria</span>
+        <br>
+      </div> -->
+      <ion-buttons right>
+          <button (click)="notification()" ion-button icon-only>
+              <span class="msgIconSpan endIcon">
+                  <ion-icon class="msgIconTag" name="custom-notify"></ion-icon>
+              </span>
+          </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<!-- CONTENT -->
+<ion-content class="homepage">
+  <div class="advertiseContent">
+      <ion-slides loop pager autoplay="2500">
+          <ion-slide *ngFor="let carouselImg of images">
+              <img src="{{imgArrayPath}}{{carouselImg}}" class="sliderimg" />
+          </ion-slide>
+      </ion-slides>
+  </div>
+ 
+  <div class="recentImage">
+      <span class="tagLineRecentImages">RECENT MESSAGES</span>
+      <div class="recentContent">
+          <ion-item *ngFor="let eachMessage of recentMessages" text-wrap>
+              <ion-avatar item-start class="avatarRecentDiv">
+                  <img src="{{imgArrayPath}}{{eachMessage.icon}}" class="recentIcon" /> 
+              </ion-avatar>
+              <p class="contentPara">{{eachMessage.mainContent}}</p>
+              <ion-note class="time">{{eachMessage.sendDate}}</ion-note>
+          </ion-item>
+      </div>
+  </div>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="recentMessages.length > 0 && isStopInfiniteScroll == false">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

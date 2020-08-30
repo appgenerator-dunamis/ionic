@@ -1,0 +1,7 @@
+{
+  "name": "LeadManagement",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

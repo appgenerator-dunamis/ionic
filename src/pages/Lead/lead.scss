@@ -1,0 +1,33 @@
+page-lead {
+[logo]{
+	width:50%;
+	height:auto;
+	
+}  
+
+[aligncenter]{
+	text-align:center;
+}
+[no-padding]{
+	padding:0px!important;
+}
+
+
+
+
+     [extrapadding]{
+        padding-bottom:60px;
+        padding-right:10px
+    }
+
+    [bottomMargin]{
+    	margin-bottom:20px!important;
+    }
+
+     button.addButton.disable-hover.item-button.button.button-ios.button-default.button-default-ios {
+        height: 17px;
+        font-size: 1.3rem;
+        margin-right: 10px;
+      }
+
+}

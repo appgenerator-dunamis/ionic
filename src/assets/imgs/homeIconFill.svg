@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2-Copy-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="grid-view-solid" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#D0021B" x="4" y="4" width="12" height="12" rx="2"></rect>
+            <rect id="Rectangle-path" fill="#D0021B" x="20" y="4" width="12" height="12" rx="2"></rect>
+            <rect id="Rectangle-path" fill="#D0021B" x="4" y="20" width="12" height="12" rx="2"></rect>
+            <rect id="Rectangle-path" fill="#D0021B" x="20" y="20" width="12" height="12" rx="2"></rect>
+            <rect id="Rectangle-path" fill-opacity="0" fill="#000000" x="0" y="0" width="36" height="36"></rect>
+        </g>
+    </g>
+</svg>

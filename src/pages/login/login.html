@@ -1,0 +1,25 @@
+<ion-content>
+    <!--  login-page -->
+    <ion-grid class="full-height">
+        <ion-row align-items-center class="full-height" row-center>
+            <ion-col text-center>
+                <form (ngSubmit)="userLogin()">
+
+                    <ion-list class="login-list">
+                        <ion-item>
+                            <ion-input text-center type="text" placeholder="Username" [(ngModel)]="username" [ngModelOptions]="{standalone: true}"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-input text-center type="password" placeholder="Password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                    <br/>
+                   <button ion-button full type="submit" >Login</button>
+
+                </form>
+
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

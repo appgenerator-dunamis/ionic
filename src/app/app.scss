@@ -1,0 +1,439 @@
+// Customized Icon
+ion-icon {
+  &[class*="custom-"] {
+    mask-size: contain;
+    mask-position: 50% 50%;
+    mask-repeat: no-repeat;
+    background: currentColor;
+    width: 1em;
+    height: 1em;
+  }
+  &[class*="custom-dp"] {
+    mask-image: url(../assets/imgs/momentsLogo.svg);
+  } //HomeICon
+  &[class*="custom-homeIcon"] {
+    mask-image: url(../assets/imgs/home.svg);
+  } //SmartHomeIcon
+  &[class*="custom-smartHome"] {
+    mask-image: url(../assets/imgs/smartHome.svg);
+  } // MY Property Icon
+  &[class*="custom-MyPropertyIcon"] {
+    mask-image: url(../assets/imgs/MyPropertyIcon.svg);
+  } // Visitors
+  &[class*="custom-visitor"] {
+    mask-image: url(../assets/imgs/visitors.svg);
+  } //   More Icon
+  &[class*="custom-moreIcon"] {
+    mask-image: url(../assets/imgs/moreIcon.svg);
+  } //   Alert Icon
+  &[class*="custom-alertIcon"] {
+    mask-image: url(../assets/imgs/alertIcon.svg);
+  } //   Sos Icon
+  &[class*="custom-sosIcon"] {
+    mask-image: url(../assets/imgs/sosIcon.svg);
+  } // Bell Icon
+  &[class*="custom-bellIcon"] {
+    mask-image: url(../assets/imgs/bell.svg);
+  } //DropOff/PickUp
+  &[class*="custom-pickupDrop"] {
+    mask-image: url(../assets/imgs/PickUpDropOff.svg);
+  } //OverNightVisit
+  &[class*="custom-OverNight"] {
+    mask-image: url(../assets/imgs/Overnight.svg);
+  } //Delivery
+  &[class*="custom-delivery"] {
+    mask-image: url(../assets/imgs/delivery.svg);
+  } //Contractor/Worker
+  &[class*="custom-contractorWorker"] {
+    mask-image: url(../assets/imgs/contractorWorker.svg);
+  } //Notify
+  &[class*="custom-notify"] {
+    mask-image: url(../assets/imgs/notify.svg);
+  }
+}
+
+
+
+[textBoxColor] {
+  color: #888 !important;
+}
+
+/////////////////////////////////////////////////// Android///////////////////////////////////////////////////////////////////////
+
+// Outline Dashboard
+.ion-md-dashboard {
+  content: url("../assets/imgs/homeIcon.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+
+// Fill Dashboard
+.tabs-md .tab-button[aria-selected=true] {
+  .ion-md-dashboard {
+    content: url("../assets/imgs/homeIconFill.svg");
+  }
+}
+
+// Outline MyProperty
+.ion-md-building {
+  content: url("../assets/imgs/MyPropertyIcon.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+
+// Fill MyProperty
+.tabs-md .tab-button[aria-selected=true] {
+  .ion-md-building {
+    content: url("../assets/imgs/MyPropertyIconFill.svg");
+  }
+}
+
+// Outline Visitor
+.ion-md-person {
+  content: url("../assets/imgs/visitors.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+
+// Fill Visitor
+.tabs-md .tab-button[aria-selected=true] {
+  .ion-md-person {
+    content: url("../assets/imgs/visitorsFill.svg");
+  }
+}
+
+// Outline SmartHome
+.ion-md-smartHome {
+  content: url("../assets/imgs/smartHome.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Outline SmartHome
+.ion-md-income {
+  content: url("../assets/imgs/Income.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+
+.ion-md-saving {
+  content: url("../assets/imgs/Saving.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+.ion-md-bank {
+  content: url("../assets/imgs/Bank.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+.ion-md-budget {
+  content: url("../assets/imgs/Budget.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Fill Bulk
+.tabs-md .tab-button{
+  .ion-md-smartHome {
+    content: url("../assets/imgs/Income.svg");
+  }
+}
+
+// Fill Container
+.tabs-md .tab-button {
+  .ion-md-container {
+    content: url("../assets/imgs/Saving.svg");
+  }
+}
+
+// Outline moreMenu
+.ion-md-moreMenu {
+  content: url("../assets/imgs/moreoutline.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+
+// Fill moreMenu
+.tabs-md .tab-button[aria-selected=true] {
+  .ion-md-moreMenu {
+    content: url("../assets/imgs/moreFill.svg");
+  }
+}
+
+//////////////////////////////////////////////////////////IOS////////////////////////////////////////////////////////////////////////////////
+
+//Outline Dashboard
+.ion-ios-dashboard-outline {
+  content: url("../assets/imgs/homeIcon.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Fill Dashboard
+.tabs-ios .tab-button[aria-selected=true] {
+  .ion-ios-dashboard {
+    content: url("../assets/imgs/homeIconFill.svg");
+  }
+}
+
+//Outline My Property
+.ion-ios-building-outline {
+  content: url("../assets/imgs/MyPropertyIcon.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Fill My Property
+.tabs-ios .tab-button[aria-selected=true] {
+  .ion-ios-building {
+    content: url("../assets/imgs/MyPropertyIconFill.svg");
+  }
+}
+
+//Outline Visitors
+.ion-ios-person-outline {
+  content: url("../assets/imgs/visitors.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Fill Visitors
+.tabs-ios .tab-button[aria-selected=true] {
+  .ion-ios-person {
+    content: url("../assets/imgs/visitorsFill.svg");
+  }
+}
+
+//Outline SmartHome
+.ion-ios-smartHome-outline {
+  content: url("../assets/imgs/smartHome.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Fill SmartHome
+.tabs-ios .tab-button[aria-selected=true] {
+  .ion-ios-smartHome {
+    content: url("../assets/imgs/smartHomeFill.svg");
+  }
+}
+
+//Outline MoreMenu
+.ion-ios-moreMenu-outline {
+  content: url("../assets/imgs/moreoutline.svg");
+  min-width: 1.1em !important;
+  min-height: 1.1em !important;
+}
+
+// Fill MoreMenu
+.tabs-ios .tab-button[aria-selected=true] {
+  .ion-ios-moreMenu {
+    content: url("../assets/imgs/moreFill.svg");
+  }
+}
+
+
+@keyframes anim {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.list
+{
+  animation: anim 0.75s ease;
+}
+
+
+///////////////////////////////////////////////////////////ANDROID/////////////////////////////////////////////////////////////////
+
+//Active Tab
+.tabs-md .tab-button[aria-selected=true] {
+	color:#D0021B;
+}
+// InActive Tab
+.tabs-md .tab-button[aria-selected=false] {
+	color:#313131;
+}
+
+// /////////////////////////////////////////////////////IOS//////////////////////////////////////////////////////////////////////////
+
+// Active Tab
+.tabs-ios .tab-button[aria-selected=true] {
+	color:#D0021B;
+}
+
+// Inactive Tab
+.tabs-ios .tab-button[aria-selected=false] {
+	color:#313131;
+}
+
+
+
+on-segment {
+  display: block;
+  white-space: nowrap;
+  font-size: 0;
+  overflow: auto;
+  
+  &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      display: none;
+  }
+  
+  ion-segment-button.segment-button {
+      display: inline-block;
+      min-width: 100px;
+      width: auto;
+  }
+  }
+
+  // CUSTOm STYLE
+  ion-content{
+    ion-list {
+      ion-header {
+        color: #34495E;
+      }
+      .lineOneContent {
+        font-size: 16px;
+        color: #34495E;
+        font-weight: 500;
+      }
+      .lineTwoContent {
+        font-size: 14px;
+        color: #0088F1;
+      }
+      .time {
+        font-size: 12px;
+      }
+      // .col50{
+      //   width:50%;
+      //   display: inline-block;
+      // }
+    }
+
+    ion-fab[bottom] {
+      position: fixed;
+    }
+    ion-input {
+      color: #203035;
+      &.input-text-right input{
+        text-align: right;
+      }
+    }
+    .toggle-label{
+      padding:10px 0;
+    }
+    .calendarIcon {
+        font-size: 24px;
+    }
+    .timeIcon {
+        font-size: 24px;
+    }
+    .item-header
+    {
+        font-weight: bolder;
+        font-size:15px;
+        padding: 10px 0px 0px 0px;
+    }
+    .saveButton .button-inner {
+      padding: 10px;
+    }
+
+    .first-letter-outer{
+      margin: 8px 16px 8px 0;
+      .first-letter-inner{
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          border-radius: 50%;
+          text-align: center;
+          background-color: #efefef;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+      }
+  }
+
+  
+    .qrCodeDiv {
+            padding-top: 8px;
+            .QR-codeText {
+                color: #34495E;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+
+  }
+
+  [custom-cards] {
+    .grid-full ion-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 5px 0;
+    }
+    .row {
+      padding: 0 12px;
+    }
+    .col {
+      padding: 5px 0;
+    }
+    .card {
+      margin: 0 5px;
+      width: calc(100% - 10px);
+      height: 115px; // padding: 14px;
+      padding: 12px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+      border-radius: 4px;
+      h1 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 3.5rem;
+        width:60%;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.5rem; // letter-spacing: 1px;
+      }
+      img{
+       width:auto;
+       margin:0 auto;
+      }
+    }
+
+
+    [summary]{ 
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.08) 100%);
+        box-shadow: 1px 1px 10px #a9a9a9, -1px -1px 10px #ffffff;
+    border-radius: 5px  !important;
+      margin-top:20px;
+      margin-bottom:20px;
+    ion-list {
+        padding: 10px;
+        
+
+        span {
+            &:first-child{
+                font-weight: bold;
+            }
+            &:last-child{
+                float: right;
+            }
+        }
+    }
+    }
+
+    
+  }

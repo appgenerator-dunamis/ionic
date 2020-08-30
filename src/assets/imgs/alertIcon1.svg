@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="building-solid" fill-rule="nonzero">
+            <path d="M31,8 L22,8 L22,33 L33,33 L33,10 C33,8.8954305 32.1045695,8 31,8 Z M26,25 L24,25 L24,23 L26,23 L26,25 Z M26,20 L24,20 L24,18 L26,18 L26,20 Z M26,15 L24,15 L24,13 L26,13 L26,15 Z M30,25 L28,25 L28,23 L30,23 L30,25 Z M30,20 L28,20 L28,18 L30,18 L30,20 Z M30,15 L28,15 L28,13 L30,13 L30,15 Z" id="Shape" fill="#D0021B"></path>
+            <path d="M17.88,3 L6.12,3 C4.94915633,3 4,3.94915633 4,5.12 L4,33 L9,33 L9,30 L15,30 L15,33 L20,33 L20,5.12 C20,3.94915633 19.0508437,3 17.88,3 Z M9,25 L7,25 L7,23 L9,23 L9,25 Z M9,20 L7,20 L7,18 L9,18 L9,20 Z M9,15 L7,15 L7,13 L9,13 L9,15 Z M9,10 L7,10 L7,8 L9,8 L9,10 Z M13,25 L11,25 L11,23 L13,23 L13,25 Z M13,20 L11,20 L11,18 L13,18 L13,20 Z M13,15 L11,15 L11,13 L13,13 L13,15 Z M13,10 L11,10 L11,8 L13,8 L13,10 Z M17,25 L15,25 L15,23 L17,23 L17,25 Z M17,20 L15,20 L15,18 L17,18 L17,20 Z M17,15 L15,15 L15,13 L17,13 L17,15 Z M17,10 L15,10 L15,8 L17,8 L17,10 Z" id="Shape" fill="#D0021B"></path>
+            <rect id="Rectangle-path" fill-opacity="0" fill="#000000" x="0" y="0" width="36" height="36"></rect>
+        </g>
+    </g>
+</svg>

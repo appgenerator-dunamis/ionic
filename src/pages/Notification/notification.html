@@ -1,0 +1,38 @@
+<!-- HEADER -->
+<ion-header no-border>
+    <ion-navbar transparent>
+        <ion-title>
+            Notification
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!-- BODY -->
+<ion-content class="msgContent">
+    <ion-list class="notificationList list">
+        <!--<ion-list-header class="msgContentListHeader">Today</ion-list-header>-->
+        <span *ngFor="let eachMessage of messages">
+            <ion-item text-wrap>
+                <ion-avatar item-start class="avatarRecentDiv">
+                    <img src="{{imgArrayPath}}{{eachMessage.icon}}" class="recentIcon" />
+                </ion-avatar>
+                <p class="contentPara">{{eachMessage.message}}</p>
+                <ion-note class="time">{{eachMessage.sendDate}}</ion-note>
+            </ion-item>
+        </span>
+
+        <!--    <ion-list-header class="msgContentListHeader">Yesterday</ion-list-header>
+            <span *ngFor="let msg of messages">
+              <ion-item text-wrap>
+                <ion-avatar item-start class="avatarRecentDiv">
+                  <img src="{{imgArrayPath}}{{msg.icon}}" class="recentIcon" />
+                </ion-avatar>
+                <p class="contentPara">{{msg.mainContent}}</p>
+                <ion-note class="time">{{msg.time}}</ion-note>
+              </ion-item>
+            </span>-->
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="messages.length > 0 && isStopInfiniteScroll == false">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

@@ -1,0 +1,64 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>
+            {{mode}} Lead
+        </ion-title>
+        <ion-buttons start>
+            <button ion-button (click)="closeModal()">
+                <span ion-text color="primary" showWhen="ios">Cancel</span>
+                <ion-icon name="md-close" showWhen="android,windows"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <div class="edit-container" padded>
+    	<ion-item transparent>
+            <ion-label color="primary" floating>Lead
+            </ion-label>
+            <ion-input  textBoxColor [disabled] = "readOnly" type="text" [(ngModel)]="lead.lead" name="lead"  ></ion-input>
+        </ion-item><ion-item transparent>
+            <ion-label color="primary" floating>Date
+            </ion-label>
+            <ion-input  textBoxColor [disabled] = "readOnly" type="date" [(ngModel)]="lead.date" name="date"  ></ion-input>
+        </ion-item> <ion-item >
+        <ion-label color="primary" floating>Product</ion-label>
+        <ion-select textBoxColor  interface="action-sheet" [(ngModel)]="productId"  (ionChange)="onProductChanged()">
+          <ion-option  *ngFor="let product of products" value="{{product.id}}">{{product.product}}</ion-option>
+        </ion-select>
+      </ion-item><ion-item >
+        <ion-label color="primary" floating>Customer</ion-label>
+        <ion-select textBoxColor  interface="action-sheet" [(ngModel)]="customerId"  (ionChange)="onCustomerChanged()">
+          <ion-option  *ngFor="let customer of customers" value="{{customer.id}}">{{customer.customer}}</ion-option>
+        </ion-select>
+      </ion-item><ion-item >
+        <ion-label color="primary" floating>Organization</ion-label>
+        <ion-select textBoxColor  interface="action-sheet" [(ngModel)]="organizationId"  (ionChange)="onOrganizationChanged()">
+          <ion-option  *ngFor="let organization of organizations" value="{{organization.id}}">{{organization.organization}}</ion-option>
+        </ion-select>
+      </ion-item>
+        <div class="buttonDiv" padding>
+            <ion-grid>
+                <ion-row padding>
+                    
+                    <ion-col col-9 text-right *ngIf="!readOnly">
+                        <button ion-button color="primary" (click)="closeModal()" outline>Cancel</button>
+                    </ion-col>
+
+                    <ion-col col-3 text-right *ngIf="!readOnly">
+                        <button ion-button class="saveButton"  (click)="save()" color="primary">Save</button>
+                    </ion-col>
+
+                    <ion-col  text-right *ngIf="readOnly">
+                        <button col-12 ion-button class="saveButton"  (click)="closeModal()" outline color="primary">Cancel</button>
+                    </ion-col>
+
+
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

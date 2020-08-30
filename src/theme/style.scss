@@ -1,0 +1,87 @@
+ion-content .item-header{
+    color: #D0021B !important;
+}
+[margin-right-10]{
+    margin-right: 10px !important;
+}
+
+.pastTripDetail{
+    ion-item{
+        background: #eeeeee;
+    }
+    ion-avatar{
+        min-width: 0 !important;
+        min-height: 0 !important;
+    }
+    ion-icon{
+        font-size: 1.5em;
+    }
+    img{
+        width: 26px !important;
+        height: 26px !important;
+    }
+}
+
+.play-triange{
+    transform: rotate(-90deg);
+    position: relative;
+    left: 27px;
+    float: left;
+    bottom: 3px;
+    color: #eeeeee;
+}
+
+.ionic3-star-rating[_ngcontent-c0] .button[_ngcontent-c0] {
+    height: 23px !important;
+    background: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 23px !important;
+    margin: 2px !important;
+}
+[load-list-card]{
+    border-top: 5px solid #d0021b;
+    [main-header]{
+        color: #d0021b;
+    font-size: 21px;
+    font-weight: 500;
+    };
+    [sub-header]{
+        color: gray;
+    font-size: 14px;
+    };
+    ion-card-content p{
+        margin-bottom: 5px;
+    border-bottom: 1px dotted #bababa;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    };
+}
+
+ion-card{
+    ion-label{
+        font-size: 12px;
+
+    }
+   
+}
+[pieChart], [barChart]{
+    display: block;
+    width: 126% !important;
+    height: auto!important;
+    left: -12%  !important; 
+    position: relative;
+    margin-bottom: 15px;
+ }
+ [barChart]{
+     padding: 25px;
+ }
+ .color-box{
+     width:13px;
+     height: 13px;
+     float:left;
+     margin: 2px;
+     top: -2px;
+     position: relative;
+     margin-right: 6px;
+ }

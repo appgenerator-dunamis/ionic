@@ -1,0 +1,163 @@
+<ion-header>
+  <ion-navbar class="navbarContent" style="padding:10px">
+    <div headerbar align="center">
+      <span>
+          Acme Widgets
+      </span>
+    </div>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment padding [(ngModel)]="leadTabs" (ionChange)="onSegmentChanged()">
+	<ion-segment-button value="Lead" >
+		Lead
+	</ion-segment-button><ion-segment-button value="Product" >
+                Product
+            </ion-segment-button><ion-segment-button value="Customer" >
+                Customer
+			</ion-segment-button>
+			
+  </ion-segment>
+
+  <div [ngSwitch]="leadTabs" timeBlock>
+    <div custom-cards *ngSwitchCase="'Product'">
+	<div summary>
+	  <ion-row>
+	      <ion-col>
+		  <ion-list>
+		      <span>Summary 1 : </span> <span>  Product xxx </span>
+		  </ion-list>
+		  <ion-list>
+		      <span>Summary 2 : </span> <span>  Product xxx </span>
+		  </ion-list>
+	       </ion-col>
+	  </ion-row>   
+	</div>
+
+	<ion-list class="list">
+		<ion-item *ngFor=" let product of products"  (click)="loadProductModal(false,'Update',product)">
+		    <ion-avatar item-start class="mahaBulkUnloadShLink " up>
+		        <img src="assets/imgs/crane.svg" />
+		    </ion-avatar>
+		   <p class="lineOneContent">{{product?.product}}</p>	
+		   <!-- <p class="lineOneContent"></p>-->
+		    <!--<ion-note class="time"></ion-note> -->
+		</ion-item>
+	</ion-list>
+ 
+          <ion-infinite-scroll (ionInfinite)="doInfiniteProduct($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+<ion-fab right bottom  extrapadding>
+     <button ion-fab color="primary" (click)="loadProductModal(false,'Add',{})">
+       <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab>
+
+</div><div custom-cards *ngSwitchCase="'Lead'">
+	<div summary>
+	  <ion-row>
+	      <ion-col>
+		  <ion-list>
+		      <span>Summary 1 : </span> <span>  Lead xxx </span>
+		  </ion-list>
+		  <ion-list>
+		      <span>Summary 2 : </span> <span>  Lead xxx </span>
+		  </ion-list>
+	       </ion-col>
+	  </ion-row>   
+	</div>
+
+	<ion-list class="list">
+		<ion-item *ngFor=" let lead of leads"  (click)="loadLeadModal(false,'Update',lead)">
+		    <ion-avatar item-start class="mahaBulkUnloadShLink " up>
+		        <img src="assets/imgs/crane.svg" />
+		    </ion-avatar>
+		   <p class="lineOneContent">{{lead?.lead}}</p><p class="lineOneContent">{{lead?.date| date:'medium'}}</p>	<p class="lineOneContent">{{lead?.product?.product}}</p><p class="lineOneContent">{{lead?.customer?.customer}}</p><p class="lineOneContent">{{lead?.organization?.organization}}</p>
+		   <!-- <p class="lineOneContent"></p>-->
+		    <!--<ion-note class="time"></ion-note> -->
+		</ion-item>
+	</ion-list>
+ 
+          <ion-infinite-scroll (ionInfinite)="doInfiniteLead($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+<ion-fab right bottom  extrapadding>
+     <button ion-fab color="primary" (click)="loadLeadModal(false,'Add',{})">
+       <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab>
+
+</div><div custom-cards *ngSwitchCase="'Customer'">
+	<div summary>
+	  <ion-row>
+	      <ion-col>
+		  <ion-list>
+		      <span>Summary 1 : </span> <span>  Customer xxx </span>
+		  </ion-list>
+		  <ion-list>
+		      <span>Summary 2 : </span> <span>  Customer xxx </span>
+		  </ion-list>
+	       </ion-col>
+	  </ion-row>   
+	</div>
+
+	<ion-list class="list">
+		<ion-item *ngFor=" let customer of customers"  (click)="loadCustomerModal(false,'Update',customer)">
+		    <ion-avatar item-start class="mahaBulkUnloadShLink " up>
+		        <img src="assets/imgs/crane.svg" />
+		    </ion-avatar>
+		   	<p class="lineOneContent">{{customer?.customer?.firstName}}</p>
+		   <!-- <p class="lineOneContent"></p>-->
+		    <!--<ion-note class="time"></ion-note> -->
+		</ion-item>
+	</ion-list>
+ 
+          <ion-infinite-scroll (ionInfinite)="doInfiniteCustomer($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+<ion-fab right bottom  extrapadding>
+     <button ion-fab color="primary" (click)="loadCustomerModal(false,'Add',{})">
+       <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab>
+
+</div><div custom-cards *ngSwitchCase="'Organization'">
+	<div summary>
+	  <ion-row>
+	      <ion-col>
+		  <ion-list>
+		      <span>Summary 1 : </span> <span>  Organization xxx </span>
+		  </ion-list>
+		  <ion-list>
+		      <span>Summary 2 : </span> <span>  Organization xxx </span>
+		  </ion-list>
+	       </ion-col>
+	  </ion-row>   
+	</div>
+
+	<ion-list class="list">
+		<ion-item *ngFor=" let organization of organizations"  (click)="loadOrganizationModal(false,'Update',organization)">
+		    <ion-avatar item-start class="mahaBulkUnloadShLink " up>
+		        <img src="assets/imgs/crane.svg" />
+		    </ion-avatar>
+		   <p class="lineOneContent">{{organization?.organization}}</p>	
+		   <!-- <p class="lineOneContent"></p>-->
+		    <!--<ion-note class="time"></ion-note> -->
+		</ion-item>
+	</ion-list>
+ 
+          <ion-infinite-scroll (ionInfinite)="doInfiniteOrganization($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+<ion-fab right bottom  extrapadding>
+     <button ion-fab color="primary" (click)="loadOrganizationModal(false,'Add',{})">
+       <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-fab>
+
+</div>
+  </div> 
+
+</ion-content>

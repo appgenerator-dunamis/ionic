@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 2 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.75999999">
+        <g id="building-line" fill-rule="nonzero">
+            <path d="M31,8 L23,8 L23,10 L31,10 L31,31 L23,31 L23,33 L33,33 L33,10 C33,8.8954305 32.1045695,8 31,8 Z" id="Shape" fill="#313131"></path>
+            <path d="M19.88,3 L6.12,3 C4.94915633,3 4,3.94915633 4,5.12 L4,33 L22,33 L22,5.12 C22,3.94915633 21.0508437,3 19.88,3 Z M20,31 L17,31 L17,28 L9,28 L9,31 L6,31 L6,5.12 C6,5.08817402 6.01264282,5.05765155 6.03514719,5.03514719 C6.05765155,5.01264282 6.08817402,5 6.12,5 L19.88,5 C19.911826,5 19.9423484,5.01264282 19.9648528,5.03514719 C19.9873572,5.05765155 20,5.08817402 20,5.12 L20,31 Z" id="Shape" fill="#313131"></path>
+            <rect id="Rectangle-path" fill="#313131" x="8" y="8" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="12" y="8" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="16" y="8" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="8" y="13" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="12" y="13" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="16" y="13" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="8" y="18" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="12" y="18" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="16" y="18" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="8" y="23" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="12" y="23" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="16" y="23" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="23" y="13" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="27" y="13" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="23" y="18" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="27" y="18" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="23" y="23" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill="#313131" x="27" y="23" width="2" height="2"></rect>
+            <rect id="Rectangle-path" fill-opacity="0" fill="#000000" x="0" y="0" width="36" height="36"></rect>
+        </g>
+    </g>
+</svg>
